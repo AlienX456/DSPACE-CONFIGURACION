@@ -4,3 +4,5 @@ cp /opt/dspace/config/dspace.cfg .
 cp /opt/dspace/config/local.cfg .
 cp /opt/tomcat/webapps/jspui/WEB-INF/classes/Messages.properties .
 cp /opt/dspace/config/input-forms.xml .
+cp /opt/dspace/config/news-top.html .
+cp /opt/dspace/config/news-side.html .
