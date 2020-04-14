@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node id="AudienceCategories" label="Audience Categories">
+        <isComposedBy>
+                <node id="SCB11" label="Advisor">
+                </node>
+                <node id="SCB12" label="Apprentice (student)">
+                </node>
+                <node id="SCB13" label="Manager (Executive)">
+                </node>
+                <node id="SCB14" label="Attending">
+                </node>
+                <node id="SCB15" label="Professor">
+                </node>
+                <node id="SCB16" label="Other">
+                </node>
+
+        </isComposedBy>
+</node>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node id="NivelEducativoCategories" label="NEducativo Categories">
+	<isComposedBy>
+		<node id="SCB11" label="Preschool">
+		</node>
+		<node id="SCB12" label="Primary Basic">
+		</node>
+		<node id="SCB13" label="Intermediate">
+		</node>
+		<node id="SCB14" label="Vocational Intermediate">
+		</node>
+		<node id="SCB15" label="Technical Superior">
+		</node>
+		<node id="SCB16" label="Superior Technologist">
+		</node>
+		<node id="SCB17" label="Profesional superior">
+		</node>
+		<node id="SCB18" label="Postgraduate superior">
+		</node>
+		<node id="SCB19" label="Other">
+		</node>
+	</isComposedBy>
+</node>

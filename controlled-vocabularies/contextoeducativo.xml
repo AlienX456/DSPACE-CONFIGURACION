@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node id="ContextoEducativoCategories" label="CEducativo Categories">
+	<isComposedBy>
+		<node id="SCB11" label="Formal education">
+		</node>
+		<node id="SCB12" label="Continued education">
+		</node>
+		<node id="SCB13" label="Long distance learning">
+		</node>
+		<node id="SCB14" label="Educative administration">
+		</node>
+		<node id="SCB15" label="Professional development">
+		</node>
+		<node id="SCB16" label="Special education">
+		</node>
+		<node id="SCB17" label="Vocational Education (To work)">
+		</node>
+		<node id="SCB18" label="Other">
+		</node>
+	</isComposedBy>
+</node>

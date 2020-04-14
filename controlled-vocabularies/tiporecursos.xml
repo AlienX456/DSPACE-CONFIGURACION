@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node id="TypeCategories" label="TypeResource Categories">
+	<isComposedBy>
+		<node id="SCB11" label="Audio">
+		</node>
+		<node id="SCB12" label="Data">
+		</node>
+		<node id="SCB13" label="Image">
+		</node>
+		<node id="SCB14" label="Text">
+		</node>
+		<node id="SCB15" label="Video">
+		</node>
+		<node id="SCB16" label="Application">
+		</node>
+		<node id="SCB17" label="Evaluation">
+		</node>
+		<node id="SCB18" label="Broadcast">
+		</node>
+		<node id="SCB19" label="Case study">
+		</node>
+		<node id="SCB20" label="Course">
+		</node>
+		<node id="SCB21" label="Lection">
+		</node>
+		<node id="SCB22" label="Exercises and practices">
+		</node>
+		<node id="SCB23" label="Educative game">
+		</node>
+		<node id="SCB24" label="Inquiry Activity">
+		</node>
+		<node id="SCB25" label="Experiment">
+		</node>
+		<node id="SCB26" label="Exploration">
+		</node>
+		<node id="SCB27" label="Glossary">
+		</node>
+		<node id="SCB28" label="Guidelines">
+		</node>
+		<node id="SCB29" label="Open activity">
+		</node>
+		<node id="SCB30" label="Thesis">
+		</node>
+		<node id="SCB31" label="Project">
+		</node>
+		<node id="SCB32" label="Promotional material">
+		</node>
+		<node id="SCB33" label="Reference">
+		</node>
+		<node id="SCB34" label="Module">
+		</node>
+		<node id="SCB35" label="Training Manual">
+		</node>
+		<node id="SCB36" label="Monitoring and evaluation techniques">
+		</node>
+		<node id="SCB37" label="Better practices">
+		</node>
+		<node id="SCB38" label="Role playing game">
+		</node>
+		<node id="SCB39" label="Simulation">
+		</node>
+		<node id="SCB40" label="Book of text">
+		</node>
+		<node id="SCB41" label="Tool">
+		</node>
+		<node id="SCB42" label="Web Site">
+		</node>
+		<node id="SCB43" label="Social network">
+		</node>
+		<node id="SCB44" label="Image sharing platform">
+		</node>
+		<node id="SCB45" label="Reference exchange platform">
+		</node>
+		<node id="SCB46" label="Sound sharing platform">
+		</node>
+		<node id="SCB47" label="Video sharing platform">
+		</node>
+		<node id="SCB48" label="Weblog">
+		</node>
+		<node id="SCB49" label="Wiki">
+		</node>
+	</isComposedBy>
+</node>
