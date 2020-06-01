@@ -1,0 +1,26 @@
+version: '3'
+services:
+  postgresql:
+   image: "postgres:11.2-alpine"
+   volumes:
+    - "./init:/docker-entrypoint-initdb.d/"
+    - "db-data:/var/lib/postgresql/data"
+   ports:
+    - 5432:5432
+   environment:
+    - POSTGRES_USER=dspace
+    - POSTGRES_PASSWORD=dspace
+
+#  dspace:
+#    build: "./DSPACE/"
+#    network_mode: "host"
+#    depends_on: 
+#      - postgresql
+#    extra_hosts:
+#     - "project-vinculaciondatoslod:127.0.0.1"
+#    volumes:
+#      - "dspace-data:/opt/dspace/assetstore" 
+
+volumes:
+  db-data:
+#  dspace-data:
