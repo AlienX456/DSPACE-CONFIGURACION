@@ -1,43 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <node id="ContributorsCategories" label="Contributor Categories">
 	<isComposedBy>
-		<node id="C0" label="Content">
+		<node id="C0" label="Contenido">
 			<isComposedBy>
-						<node id="C01" label="Provider - Catalina Rojas">
-							<hasNote>Teresa Rojas</hasNote>
-						</node>
-						<node id="C02" label="Expert - Michael Arcila">
-							<hasNote>Michael Perez</hasNote>
-						</node>
+				<node id="C00" label="Proveedor">
+					<isComposedBy>
+						<node id="C001" label="Catalina Rojas"/>
+						<node id="C002" label="Marleny Pavas"/>
+					</isComposedBy>		
+				</node>		
+				<node id="C01" label="Experto">
+					<isComposedBy>
+						<node id="C011" label="Michael Arcila"/>
+						<node id="C012" label="Caterine Lagos"/>
+					</isComposedBy>		
+				</node>
 			</isComposedBy>
 		</node>
-		<node id="C1" label="Design">
+
+		<node id="C1" label="Diseno">
 			<isComposedBy>
-						<node id="C11" label="Educational Validator - Teresa Rojas">
-							<hasNote>Teresa Rojas</hasNote>
-						</node>
-						<node id="C12" label="Instructional design - Michael Perez">
-							<hasNote>Michael Perez</hasNote>
-						</node>
-						<node id="C13" label="Scriptwriter - Marta Perez">
-							<hasNote>Marta Perez</hasNote>
-						</node>
+				<node id="C11" label="Validador Educativo">
+					<isComposedBy>
+						<node id="C111" label="Teresa Rojas"/>
+					</isComposedBy>		
+				</node>		
+				<node id="C12" label="Diseno Instruccional">
+					<isComposedBy>
+						<node id="C121" label="Roberto Arcila"/>
+					</isComposedBy>		
+				</node>
+				<node id="C13" label="Guionista">
+					<isComposedBy>
+						<node id="C121" label="Marta Perez"/>
+					</isComposedBy>		
+				</node>
 			</isComposedBy>
 		</node>
-		<node id="C2" label="Implementation">
+		<node id="C2" label="Implementacion">
 			<isComposedBy>
-						<node id="C21" label="Graphic design - Juan Cotta">
-							<hasNote>Juan Cotta</hasNote>						
-					    </node>
-						<node id="C22" label="Licensor - Luz Casal">
-							<hasNote>Luz Casal</hasNote>
-						</node>
-						<node id="C23" label="Technical Implementer - Sandra Ramos">
-							<hasNote>Sandra Ramos</hasNote>
-						</node>
-						<node id="C24" label="Technical Validator - Sandra Suescun">
-							<hasNote>Sandra Suescun</hasNote>
-						</node>
+				<node id="C21" label="Diseno Grafico">
+					<isComposedBy>
+						<node id="C211" label="Juan Cotta"/>
+					</isComposedBy>		
+				</node>		
+				<node id="C22" label="Licenciante">
+					<isComposedBy>
+						<node id="C221" label="Luz Casal"/>
+					</isComposedBy>		
+				</node>
+				<node id="C23" label="Implementador Tecnico">
+					<isComposedBy>
+						<node id="C231" label="Sandra Ramos"/>
+					</isComposedBy>		
+				</node>
+				<node id="C24" label="Validador Tecnico">
+					<isComposedBy>
+						<node id="C241" label="Carlos Suescun"/>
+					</isComposedBy>		
+				</node>
 			</isComposedBy>
 		</node>
 	</isComposedBy>
