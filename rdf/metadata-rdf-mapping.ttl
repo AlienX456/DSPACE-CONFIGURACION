@@ -14,8 +14,6 @@
 
 @prefix :           <#> .
 
-
-
 :author
    dm:metadataName "dc.contributor.author" ;
     dm:creates [
@@ -112,7 +110,6 @@
   ];
   .
 
-
 :citation
   dm:metadataName "dc.identifier.citation" ;
   dm:creates [
@@ -130,7 +127,6 @@
     dm:object dm:DSpaceValue ;
     ];
     .
-
 
 :doi
   dm:metadataName "dc.identifier.uri" ;
@@ -186,7 +182,7 @@
   dm:metadataName "dc.identifier.isbn" ;
   dm:creates [
     dm:subject dm:DSpaceObjectIRI ;
-    dm:predicate bibo:issn ;
+    dm:predicate bibo:isbn ;
     dm:object dm:DSpaceValue ;
   ];
   .
@@ -225,24 +221,6 @@
   ];
   .
 
-
-:languageISO
-  dm:metadataName "dc.language.iso" ;
-  dm:creates [
-    dm:subject dm:DSpaceObjectIRI ;
-    dm:predicate dc:language ;
-    dm:object [
-      a dm:LiteralGenerator ;
-      dm:modifier [
-        dm:matcher "^(..)_(.*)$" ;
-        dm:replacement "$1-$2";
-      ];
-      dm:pattern "$DSpaceValue";
-    ];
-  ];
-  .
-  
-  
  :iso
   dm:metadataName "dc.language.iso" ;
   dm:creates [
@@ -258,27 +236,7 @@
     ];
   ];
   .
-  
-
-
-
-:language
-  dm:metadataName "dc.language" ;
-  dm:creates [
-    dm:subject dm:DSpaceObjectIRI ;
-    dm:predicate dc:language ;
-    dm:object [
-      a dm:LiteralGenerator ;
-      dm:modifier [
-        dm:matcher "^Language Categories::(.*)$" ;
-        dm:replacement "$1";
-      ];
-      dm:pattern "$DSpaceValue";
-    ];
-  ];
-  .
-
-
+ 
 :subject
    dm:metadataName "dc.subject" ;
     dm:creates [
@@ -448,9 +406,6 @@
   ];
   .
 
-
-
-
 :rights
   dm:metadataName "dc.rights" ;
   dm:creates [
@@ -459,7 +414,6 @@
     dm:object dm:DSpaceValue ;
   ];
   .
-
 
 :rightsURI
   dm:metadataName "dc.rights.uri";
@@ -535,7 +489,6 @@
     ];
   ];
   .
-  
     
 :annotationentity
   dm:metadataName "dc.relation.annotationentity";
@@ -618,7 +571,6 @@
   ];
   .
 
-
 :course
   dm:metadataName "dc.relation.course" ;
   dm:creates [
@@ -653,8 +605,7 @@
   ];
   .
  
-
-:contributor
+  :contributor
   dm:metadataName "dc.contributor" ;
   dm:creates [
     dm:subject dm:DSpaceObjectIRI ;
@@ -662,35 +613,15 @@
     dm:object [
       a dm:LiteralGenerator ;
       dm:modifier [
-        dm:matcher "^Contributor Categories::(.*)$" ;
-        dm:replacement "$1";
+	  dm:matcher "(?:((Contributor Categories::Contenido::Proveedor::)|(Contributor Categories::Contenido::Experto::)|(Contributor Categories::Diseno::Validador Educativo::)|(Contributor Categories::Diseno::Diseno Instruccional::)|(Contributor Categories::Diseno::Guionista::)|(Contributor Categories::Implementacion::Diseno Grafico::)|(Contributor Categories::Implementacion::Licenciante::)|(Contributor Categories::Implementacion::Implementador Tecnico::)|(Contributor Categories::Implementacion::Validador Tecnico::)))(.*)$" ;
+      dm:replacement "$11";
       ];
       dm:pattern "$DSpaceValue";
     ];
   ];
   .
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 :dateSubmitted
   dm:metadataName "dc.date.submitted" ;
   dm:creates [
@@ -717,70 +648,3 @@
   ];
   .
   
-
-:relationURI
-  dm:metadataName "dc.relation.uri";
-  dm:creates [
-    dm:subject dm:DSpaceObjectIRI ;
-    dm:predicate dcterms:relation ;
-    dm:object [
-      a dm:ResourceGenerator ;
-      dm:pattern "$DSpaceValue" ;
-    ];
-  ];
-  .
-
-:isReferencedBy
-  dm:metadataName "dc.relation.isreferencedby";
-  dm:creates [
-    dm:subject dm:DSpaceObjectIRI ;
-    dm:predicate dcterms:isReferencedBy ;
-    dm:object dm:DSpaceValue ;
-  ];
-  .
-
-:isReplacedBy
-  dm:metadataName "dc.relation.isreplacedby";
-  dm:creates [
-    dm:subject dm:DSpaceObjectIRI ;
-    dm:predicate dcterms:isReplacedBy ;
-    dm:object dm:DSpaceValue ;
-  ];
-  .
-
-:isVersionOf
-  dm:metadataName "dc.relation.isversionof";
-  dm:creates [
-    dm:subject dm:DSpaceObjectIRI ;
-    dm:predicate dcterms:isVersionOf ;
-    dm:object dm:DSpaceValue ;
-  ];
-  .
-
-:replaces
-  dm:metadataName "dc.relation.replaces";
-  dm:creates [
-    dm:subject dm:DSpaceObjectIRI ;
-    dm:predicate dcterms:replaces ;
-    dm:object dm:DSpaceValue ;
-  ];
-  .
-
-:references
-  dm:metadataName "dc.relation.isbasedon" ;
-  dm:creates [
-    dm:subject dm:DSpaceObjectIRI ;
-    dm:predicate dcterms:references ;
-    dm:object dm:DSpaceValue ;
-  ];
-  .
-
-:isFormatOf
-  dm:metadataName "dc.relation.isformatof" ;
-  dm:creates [
-    dm:subject dm:DSpaceObjectIRI ;
-    dm:predicate dcterms:isFormatOf ;
-    dm:object dm:DSpaceValue ;
-  ];
-  .
-
